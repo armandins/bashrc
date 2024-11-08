@@ -136,7 +136,7 @@ alias ls='exa -al --color=always --group-directories-first' # my preferred listi
 alias la='eza -a --color=always --group-directories-first'  # all files and dirs
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias C='code .' # opens vscode
-alias X='explorer.exe' #WSL intended alias
+alias X='explorer.exe .' #WSL intended alias
 alias vim='nvim' # Change default to nvim 
 
 # //////////////////////////////////////////////////////
