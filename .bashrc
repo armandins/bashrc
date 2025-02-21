@@ -91,6 +91,16 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias ..='cd ..'
+alias cl='clear'
+alias np='notepad.exe'
+# batcat (bat) alias 
+# batcat is an alternative to cat
+# to exit, simple press q 
+alias catt='batcat'
+
+#sublimetext
+alias sl='subl'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -116,38 +126,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# OHMYPOSH
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh --config 'https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/clean-detailed.omp.json' init bash)"
-. /opt/openfoam12/etc/bashrc
 
-# //////////////////////////////////////////////////////
-#                      Preferences
-# Note: Need to install exa first
-# https://github.com/ogham/exa
-# sudo apt install exa 
-# sudo apt update
-# sudo apt full-upgrade
-# //////////////////////////////////////////////////////
-
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='eza -a --color=always --group-directories-first'  # all files and dirs
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias C='code .' # opens vscode
-alias X='explorer.exe .' #WSL intended alias
-alias vim='nvim' # Change default to nvim 
-
-# //////////////////////////////////////////////////////
-#                       OPENFOAM
-# //////////////////////////////////////////////////////
-# Locations: 
-# v2406: usr\lib\openfoam\openfoam2406
-# v12:   opt\openfoam12
-# v9:    opt\openfoam9
-# //////////////////////////////////////////////////////
-
-alias OF2406='. /usr/lib/openfoam/openfoam2406/etc/bashrc'
+alias OF2412='. /usr/lib/openfoam/openfoam2412/etc/bashrc'		
 alias OF12='. /opt/openfoam12/etc/bashrc'
-alias OF9='. /opt/openfoam9/etc/bashrc'
